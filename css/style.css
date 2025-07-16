@@ -1,51 +1,94 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+:root {
+  --primary-clr: #131313;
+  --secondary-clr: #727272;
+  --accent-clr: #ff900e;
+  --lightBlack-clr: #424242;
+  --white-clr: #ffffff;
+  --bg-clr: #ff8f0e1a;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* *Utilities */
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1536px;
 }
 
-body {
-  font-family: system-ui, -apple-system, "Helvetica Neue", sans-serif;
+.grid {
+  display: grid;
 }
 
-html {
-  scroll-behavior: smooth;
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* *Components */
+.btn {
+  padding: 20px 25px;
+  font-weight: 600;
+  background-color: var(--accent-clr);
+  color: var(--white-clr);
+  border-radius: 8px;
+  transition: background-color 0.33s ease-in-out;
+}
+.btn:hover {
+  background-color: #131313;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  margin: 50px;
+  font-weight: 500;
+  color: var(--lightBlack-clr);
+  transition: color 0.33s ease-in-out;
+}
+a:hover {
+  color: var(--accent-clr);
 }
 
-/* input, button, textarea, select {
-  font: inherit;
-  color: inherit;
+/* *COMMON CSS START */
+h1,
+h2,
+h3 {
+  color: var(--primary-clr);
 }
-
-textarea {
-  resize: none;
-} */
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
+p {
+  color: var(--secondary-clr);
 }
+/* *COMMON CSS END */
 
-ol,
-ul {
-  list-style: none;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--primary-clr);
+  width: 235px;
 }
-
-img,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.logo:hover {
+  color: var(--primary-clr);
+}
+.logo img {
+  margin-bottom: -8px;
+  height: 53px;
 }
