@@ -19,7 +19,7 @@
 .container {
   margin: 0 auto;
   width: 85%;
-  max-width: 1536px;
+  max-width: 1440px;
 }
 
 .grid {
@@ -28,6 +28,10 @@
 
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -42,6 +46,10 @@
   justify-content: space-between;
 }
 
+.m-auto {
+  margin-inline: auto;
+}
+
 .align-center {
   align-items: center;
 }
@@ -54,6 +62,7 @@
 .btn {
   padding: 20px 25px;
   font-weight: 600;
+  width: 180px;
   background-color: var(--accent-clr);
   color: var(--white-clr);
   border-radius: 8px;
@@ -87,18 +96,23 @@ h2 {
 p {
   color: var(--secondary-clr);
 }
+header, .hero {
+  background-color: var(--bg-clr);
+}
+.main {
+  background-color: var(--white-clr);
+}
 /* *COMMON CSS END */
 
 /* *HEADER START */
 header {
   padding: 50px 0;
-  background-color: var(--bg-clr);
 }
 .logo {
   display: flex;
   align-items: center;
   gap: 1px;
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 700;
   color: var(--primary-clr);
   width: 235px;
@@ -124,3 +138,27 @@ header {
   cursor: pointer;
 }
 /* *HEADER END */
+
+/* *HERO START */
+.hero {
+  padding: 50px 0 45px;
+}
+.hero-container {
+  gap: 50px;
+}
+.hero-contents {
+  max-width: 860px;
+}
+.hero-contents h1 {
+  font-size: 4rem;
+  width: 70%;
+}
+.hero-contents p {
+  margin: 32px auto;
+}
+.hero-image img {
+  border-radius: 8px;
+}
+/* *HERO END */
+
+/* *HERO END */
