@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --primary-clr: #131313;
   --secondary-clr: #727272;
@@ -26,15 +34,15 @@
   flex-wrap: wrap;
 }
 
-.justify-content-center {
+.justify-center {
   justify-content: center;
 }
 
-.justify-space-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.align-items-center {
+.align-center {
   align-items: center;
 }
 
@@ -56,7 +64,6 @@
 }
 
 a {
-  margin: 50px;
   font-weight: 500;
   color: var(--lightBlack-clr);
   transition: color 0.33s ease-in-out;
@@ -71,11 +78,22 @@ h2,
 h3 {
   color: var(--primary-clr);
 }
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-weight: 700;
+}
 p {
   color: var(--secondary-clr);
 }
 /* *COMMON CSS END */
 
+/* *HEADER START */
+header {
+  padding: 50px 0;
+  background-color: var(--bg-clr);
+}
 .logo {
   display: flex;
   align-items: center;
@@ -89,6 +107,20 @@ p {
   color: var(--primary-clr);
 }
 .logo img {
-  margin-bottom: -8px;
   height: 53px;
 }
+.header-menu ul {
+  gap: 80px;
+}
+.header-toggler {
+  display: none;
+}
+.header-toggler svg {
+    fill: var(--primary-clr);
+  transition: fill 0.33s ease-in-out;
+}
+.header-toggler svg:hover {
+  fill: var(--accent-clr);
+  cursor: pointer;
+}
+/* *HEADER END */

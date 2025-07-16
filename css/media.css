@@ -1,0 +1,74 @@
+/* For small mobile devices (up to 375px) */
+@media (width <= 375px) {
+  /* *HEADER START */
+  /* .header-menu {
+    display: none;
+  }
+  .logo {
+    font-size: 25px;
+  } */
+  /* *HEADER END */
+}
+
+/* For mobile devices between 376px and 576px */
+@media (319px <= width <= 576px) {
+  .container {
+    width: 90%;
+  }
+  /* *HEADER START */
+  .header-menu {
+    display: none;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  /* *HEADER END */
+}
+
+/* For tablets between 577px and 768px */
+@media (576px < width <= 768px) {
+  .container {
+    width: 90%;
+  }
+
+  /* *HEADER START */
+  .logo {
+    font-size: 35px;
+  }
+  .header-menu ul {
+    gap: 40px;
+  }
+  .header-toggler {
+    display: none;
+  }
+  /* *HEADER END */
+}
+
+/* For tablets and small desktops between 769px and 1024px */
+@media (768px < width <= 1024px) {
+    /* *HEADER START */
+  .logo {
+    font-size: 35px;
+  }
+  .header-menu ul {
+    gap: 40px;
+  }
+  .header-toggler {
+    display: none;
+  }
+  /* *HEADER END */
+}
+
+/* For desktops between 1025px and 1280px */
+@media (1024px < width <= 1280px) {
+  /* Styles for screens between 1025px and 1280px */
+}
+
+/* For larger desktops between 1281px and 1536px */
+@media (1280px < width <= 1536px) {
+  /* Styles for screens between 1281px and 1536px */
+}
+
+/* For extra-large desktops above 1536px */
+@media (width > 1536px) {
+}
