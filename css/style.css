@@ -20,6 +20,7 @@
   margin: 0 auto;
   width: 85%;
   max-width: 1440px;
+  border: 1px solid;
 }
 
 .grid {
@@ -167,9 +168,11 @@ header {
 /* ?FEATURE DESCRIPTION */
 .feature {
   padding: 85px 60px 130px;
+  padding: 85px 0 130px;
 }
 .feature-container {
   gap: 70px;
+  padding: 0 70px;
 }
 .feature-image-grid {
   grid-template-columns: repeat(2, 342px);
@@ -196,10 +199,11 @@ header {
 
 /* ?FEATURE DETAILS */
 .feature-detail-container {
-  margin-top: 130px;
-  gap: 150px;
+  margin-bottom: 130px;
+  flex: 1;
+  /* gap: 150px; */
 }
-.feature-details {
+.feature-detail {
   margin: 38px 0;
 }
 .feature-details-title,
@@ -219,6 +223,7 @@ header {
 }
 .feature-details-box {
   gap: 20px;
+  width: 80%;
 }
 .detail {
   padding: 30px 33px;
@@ -257,3 +262,6 @@ header {
   font-size: 3.5rem;
 }
 /* *FEATURES END */
+
+/* *FACTS START */
+/* *FACTS END */
