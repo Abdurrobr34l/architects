@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .work-sans {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -87,7 +87,8 @@ h2,
 h3 {
   color: var(--primary-clr);
 }
-h1 {
+h1,
+h4 {
   font-weight: 800;
 }
 h2 {
@@ -96,7 +97,8 @@ h2 {
 p {
   color: var(--secondary-clr);
 }
-header, .hero {
+header,
+.hero {
   background-color: var(--bg-clr);
 }
 .main {
@@ -130,7 +132,7 @@ header {
   display: none;
 }
 .header-toggler svg {
-    fill: var(--primary-clr);
+  fill: var(--primary-clr);
   transition: fill 0.33s ease-in-out;
 }
 .header-toggler svg:hover {
@@ -162,9 +164,7 @@ header {
 /* *HERO END */
 
 /* *FEATURES START */
-.feature-image, .feature-contents, .container {
-  border: 1px solid;
-}
+/* ?FEATURE DESCRIPTION */
 .feature {
   padding: 85px 60px 130px;
 }
@@ -188,8 +188,72 @@ header {
   font-weight: 700;
   color: var(--accent-clr);
 }
-.feature-contents p {
+.feature-contents p,
+.feature-details-title p {
   margin: 24px 0 32px;
   line-height: 26px;
+}
+
+/* ?FEATURE DETAILS */
+.feature-detail-container {
+  margin-top: 130px;
+  gap: 150px;
+}
+.feature-details {
+  margin: 38px 0;
+}
+.feature-details-title,
+.feature-details {
+  max-width: 550px;
+}
+.feature-details-title h2 {
+  padding-left: 20px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  width: 70%;
+  color: var(--primary-clr);
+  border-left: 5px solid var(--accent-clr);
+}
+.feature-details-title p {
+  margin: 24px 0 30px;
+}
+.feature-details-box {
+  gap: 20px;
+}
+.detail {
+  padding: 30px 33px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.detail h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.detail p {
+  margin-top: 10px;
+}
+
+.feature-detail-image {
+  position: relative;
+}
+.feature-detail-image img {
+  width: 100%;
+  height: 90%;
+}
+.experience-box {
+  position: absolute;
+  left: -20%;
+  bottom: 0.3%;
+  padding: 46px 42px 45px;
+  width: 340px;
+  background-color: var(--accent-clr);
+  border-radius: 8px;
+}
+.experience-box h4,
+.experience-box p {
+  color: var(--white-clr);
+}
+.experience-box h4 {
+  font-size: 3.5rem;
 }
 /* *FEATURES END */

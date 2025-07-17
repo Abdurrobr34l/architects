@@ -48,4 +48,5 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 8px; /* It is given as becuz all image in figma has this border */
 }
