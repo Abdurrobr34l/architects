@@ -24,6 +24,22 @@
   width: 100%;
 }
   /* *HERO END */
+
+/* *FEATURES START */
+.feature {
+  padding: 40px 0 80px;
+}
+.feature-container {
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+.feature-image-grid {
+  grid-template-columns: 1fr;
+}
+  .feature-contents h2 {
+    font-size: 2rem;
+  }
+/* *FEATURES END */
 }
 
 /* For tablets between 577px and 768px */
@@ -52,10 +68,25 @@
   width: 90%;
 }
   /* *HERO END */
+
+  /* *FEATURES START */
+.feature {
+  padding: 60px 40px 100px;
+}
+.feature-container {
+  flex-direction: column-reverse;
+}
+.feature-image-grid {
+  grid-template-columns: repeat(2, 2fr);
+}
+.feature-contents h2 {
+  font-size: 2rem;
+}
+/* *FEATURES END */
 }
 
 /* For tablets and small desktops between 769px and 1024px */
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     /* *HEADER START */
   .logo {
     font-size: 2rem;
@@ -67,16 +98,63 @@
     display: none;
   }
   /* *HEADER END */
+
+    /* *FEATURES START */
+.feature {
+  padding: 60px 40px 100px;
+}
+.feature-container {
+  flex-direction: column-reverse;
+}
+.feature-image-grid {
+  grid-template-columns: repeat(2, 2fr);
+}
+.feature-contents {
+  text-align: center;
+}
+.feature-contents h2 {
+  font-size: 2rem;
+}
+/* *FEATURES END */
 }
 
 /* For desktops between 1025px and 1280px */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* Styles for screens between 1025px and 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
+      /* *FEATURES START */
+.feature {
+  padding: 60px 40px 100px;
+}
+.feature-container {
+  flex-direction: column-reverse;
+}
+.feature-image-grid {
+  grid-template-columns: repeat(2, 2fr);
+}
+.feature-contents {
+  text-align: center;
+}
+.feature-contents h2 {
+  font-size: 2rem;
+}
+/* *FEATURES END */
 }
 
 /* For larger desktops between 1281px and 1536px */
 @media (min-width: 1281px) and (max-width: 1536px) {
-  /* Styles for screens between 1281px and 1536px */
+    /* *FEATURES START */
+.feature {
+  padding: 60px 40px 100px;
+}
+.feature-container {
+  flex-direction: row;
+}
+.feature-image-grid {
+  grid-template-columns: repeat(2, 2fr);
+}
+.feature-contents {
+  width: 50%;
+}
+/* *FEATURES END */
 }
 
 /* For extra-large desktops above 1536px */

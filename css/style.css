@@ -161,4 +161,35 @@ header {
 }
 /* *HERO END */
 
-/* *HERO END */
+/* *FEATURES START */
+.feature-image, .feature-contents, .container {
+  border: 1px solid;
+}
+.feature {
+  padding: 85px 60px 130px;
+}
+.feature-container {
+  gap: 70px;
+}
+.feature-image-grid {
+  grid-template-columns: repeat(2, 342px);
+  gap: 24px;
+}
+.feature-contents h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--secondary-clr);
+}
+.feature-contents h2 span:nth-child(2) {
+  font-weight: 700;
+  color: var(--primary-clr);
+}
+.feature-contents h2 span:nth-child(3) {
+  font-weight: 700;
+  color: var(--accent-clr);
+}
+.feature-contents p {
+  margin: 24px 0 32px;
+  line-height: 26px;
+}
+/* *FEATURES END */
